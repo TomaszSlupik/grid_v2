@@ -1,0 +1,92 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: gray;
+	font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+}
+
+.item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid black;
+	font-size: 4rem;
+}
+
+.gold {
+	background-color: gold;
+}
+
+.blue {
+	background-color: rgb(61, 110, 139);
+}
+
+.green {
+	background-color: green;
+}
+
+.pink {
+	background-color: hotpink;
+}
+
+.one {
+	grid-column: 1 / span 4;
+}
+
+.two {
+	grid-column: 5/ -1;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: [testowa] 1fr [test_dwa]1fr [test_trzy] 1fr [test_cztery];
+	grid-template-rows: 1fr 5fr 1fr;
+}
+
+.nav {
+	background-color: bisque;
+	grid-column: 1/ 5;
+}
+
+.aside {
+	background-color: brown;
+	grid-column: 1/ -2;
+}
+
+.main {
+	background-color: coral;
+	grid-column: testowa/test_dwa;
+}
+
+.footer {
+	background-color: darkkhaki;
+	grid-column: test_trzy/ test_cztery;
+}
+
+.box {
+    margin-top: 50px;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.first {
+	background-color: darkorange;
+}
+.second {
+	background-color: yellowgreen;
+}
+.third {
+	background-color: teal;
+}
